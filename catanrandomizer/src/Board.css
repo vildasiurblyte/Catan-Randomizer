@@ -1,0 +1,23 @@
+.hills {
+ fill: orange;
+} 
+
+.forest {
+  fill: green;
+} 
+
+.mountains {
+  fill: grey;
+} 
+
+.fields {
+  fill: yellow;
+}
+
+.pasture {
+  fill: lightgreen;
+} 
+
+.desert {
+  fill: sandybrown;
+}
