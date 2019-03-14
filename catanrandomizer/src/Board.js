@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {  HexGrid, Layout, Path, Hexagon, Pattern, Hex } from 'react-hexgrid';
+import {  HexGrid, Layout, Path, Hexagon, Pattern, Hex, Text } from 'react-hexgrid';
 import './Board.css';
-//const chooseRandomTile = require('./randomizeMap');
+import Numbers from './Numbers';
 
 class Board extends Component {
   render() {
@@ -10,28 +10,66 @@ class Board extends Component {
       <div className="App">
         <HexGrid width={3000} height={3000} viewBox="-90 -50 200 200">
           <Layout size={hexagonSize} spacing={1.01} origin={{ x: 0, y: 0 }}>
-            <Hexagon className={addRandomClass()} q={0} r={0} s={0} />
-            <Hexagon className={addRandomClass()} q={0} r={1} s={0} />
-            <Hexagon className={addRandomClass()} q={0} r={2} s={0} />
-            <Hexagon className={addRandomClass()} q={0} r={3} s={0} />
-            <Hexagon className={addRandomClass()} q={0} r={4} s={0} />
-            <Hexagon className={addRandomClass()} q={-1} r={1} s={0} />
-            <Hexagon className={addRandomClass()} q={-1} r={2} s={0} />
-            <Hexagon className={addRandomClass()} q={-1} r={3} s={0} />
-            <Hexagon className={addRandomClass()} q={-1} r={4} s={0} />
-            <Hexagon className={addRandomClass()} q={-2} r={2} s={0} />
-            <Hexagon className={addRandomClass()} q={-2} r={3} s={0} />
-            <Hexagon className={addRandomClass()} q={-2} r={4} s={0} />
-            <Hexagon className={addRandomClass()} q={1} r={0} s={0} />
-            <Hexagon className={addRandomClass()} q={1} r={1} s={0} />
-            <Hexagon className={addRandomClass()} q={1} r={2} s={0} />
-            <Hexagon className={addRandomClass()} q={1} r={3} s={0} />
-            <Hexagon className={addRandomClass()} q={2} r={0} s={0} />
-            <Hexagon className={addRandomClass()} q={2} r={1} s={0} />
-            <Hexagon className={addRandomClass()} q={2} r={2} s={0} />
+            <Hexagon className={addRandomClass()} q={0} r={0} s={0}>
+              <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={0} r={1} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={0} r={2} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={0} r={3} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={0} r={4} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-1} r={1} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-1} r={2} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-1} r={3} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-1} r={4} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-2} r={2} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-2} r={3} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={-2} r={4} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={1} r={0} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={1} r={1} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={1} r={2} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={1} r={3} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={2} r={0} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={2} r={1} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
+            <Hexagon className={addRandomClass()} q={2} r={2} s={0}>
+            <Text className={'text'}>{getRandomNumber()}</Text>
+            </Hexagon> 
         </Layout>
+        <Pattern id='pat' link='https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compresscs=tinysrgbdpr=1w=500'></Pattern>
           {/* Additional small grid, hexagons generated with generator */}
-      
         </HexGrid>
       </div>
     );
@@ -47,7 +85,6 @@ const values = {
   'desert': 1
 }
 
-
 function addRandomClass() {
   const randomArr = Object.keys(values);
   const randomClass = randomArr[Math.floor(Math.random() * randomArr.length)];
@@ -55,6 +92,27 @@ function addRandomClass() {
   if (values[randomClass] === 0) delete values[randomClass];
   return randomClass;
 }
-  
+
+const numbers = {
+  '2': 1,
+  '3': 2,
+  '4': 2,
+  '5': 2,
+  '6': 2,
+  '8': 2,
+  '9': 2,
+  '10': 2,
+  '11': 2,
+  '12': 1
+}
+
+function getRandomNumber () {
+  const randomArr = Object.keys(numbers);
+  const randomNumber = randomArr[Math.floor(Math.random() * randomArr.length)];
+  numbers[randomNumber] -= 1;
+  if (numbers[randomNumber] === 0) delete numbers[randomNumber];
+  console.log(typeof randomNumber)
+  return randomNumber;
+}
 
 export default Board;

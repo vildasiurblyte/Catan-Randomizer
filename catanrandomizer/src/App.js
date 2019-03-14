@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
       <h1>Catan Randomizer</h1>
       <Board/>
-
+      
       <button>Shuffle</button>
           
       </div>
