@@ -13,25 +13,32 @@ body {
 }
 
 .hills {
- fill: orange;
+ fill: 	#a32020;
 } 
 
 .forest {
-  fill: green;
+  fill: #96B83D;
 } 
 
 .mountains {
-  fill: grey;
+  fill: #778899;
 } 
 
 .fields {
-  fill: yellow;
+  fill: #FFCC00;
 }
 
 .pasture {
-  fill: lightgreen;
+  fill: #f4e2b9;
 } 
 
 .desert {
-  fill: sandybrown;
+  fill: #F5D769;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px; 
 }
