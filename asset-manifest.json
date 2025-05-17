@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Catan-Randomizer/static/css/main.48bf6d86.css",
+    "main.js": "/Catan-Randomizer/static/js/main.08ed3267.js",
+    "index.html": "/Catan-Randomizer/index.html",
+    "main.48bf6d86.css.map": "/Catan-Randomizer/static/css/main.48bf6d86.css.map",
+    "main.08ed3267.js.map": "/Catan-Randomizer/static/js/main.08ed3267.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48bf6d86.css",
+    "static/js/main.08ed3267.js"
+  ]
+}
