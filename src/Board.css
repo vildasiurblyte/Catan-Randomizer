@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 1em;
+  font-family: sans-serif;
+  background: #133b43;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+.text {
+  fill: #133b43;
+}
+
+.hills {
+ fill: 	#a32020;
+} 
+
+.forest {
+  fill: #96B83D;
+} 
+
+.mountains {
+  fill: #778899;
+} 
+
+.fields {
+  fill: #FFCC00;
+}
+
+.pasture {
+  fill: #f4e2b9;
+} 
+
+.desert {
+  fill: #F5D769;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px; 
+}
