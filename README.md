@@ -1,6 +1,6 @@
 # Catan randomizer
 
-This project was created during the Individual Hack Day at the </salt> bootcamp — inspired by my love for the board game Catan.
+This project was created during the Individual Hack Day at the Salt bootcamp — inspired by my love for the board game Catan.
 
 
 ## What It Does
